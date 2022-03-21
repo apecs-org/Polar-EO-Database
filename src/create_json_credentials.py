@@ -15,7 +15,7 @@ json_credentials = {
     "type": "service_account",
     "project_id": os.environ["PROJECT_ID"],
     "private_key_id": os.environ["PRIVATE_KEY_ID"],
-    "private_key": os.environ["PRIVATE_KEY"],
+    "private_key": os.environ["PRIVATE_KEY"].replace("\\n", "\n"),
     "client_email": os.environ["CLIENT_EMAIL"],
     "client_id": os.environ["CLIENT_ID"],
     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
@@ -25,7 +25,6 @@ json_credentials = {
 }
 
 print(json_credentials)
-
 
 # write to JSON file
 with open("./apecs-remote-sensing-database-e3d1516b4935.json", "w") as fp:
