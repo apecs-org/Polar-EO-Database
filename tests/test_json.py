@@ -7,9 +7,10 @@
 import json
 import glob
 
+
 def test_file_opening():
-    sat_files = sorted(glob.glob('./satellites/*.json'))
+    sat_files = sorted(glob.glob("./data/*.json"))
 
     for file in sat_files:
-            with open(file) as json_file:
-                data = json.load(json_file)
+        with open(file) as json_file:
+            data = json.load(json_file)

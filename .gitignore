@@ -178,3 +178,6 @@ flycheck_*.el
 
 # network security
 /network-security.data
+
+# Google spreadsheet prive keys
+apecs-remote-sensing-database-e3d1516b4935.json
