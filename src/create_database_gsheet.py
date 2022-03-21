@@ -8,6 +8,22 @@
 
 import glob
 import json
+import numpy as np
+import gspread
+import pandas as pd
+import sys
+
+sys.path.append("/home/adrien/APECS/gspread-dataframe")
+import gspread_dataframe as gd
+
+# setup API account
+gc = gspread.service_account("./apecs-remote-sensing-database-e3d1516b4935.json")
+
+# Open a sheet from a spreadsheet in one go
+sheet = gc.open("APECS Remote Sensing Database - AW tests").sheet1
+
+# clear entire work sheet
+sheet.clear()
 
 # list all database entries
 json_files = glob.glob("./data/*.json")
@@ -29,3 +45,21 @@ for file in json_files:
     gsheet_columns.update(list(db_entry.keys()))
 
 print(gsheet_columns)
+
+# insert all columns in first row
+sheet.insert_row(list(gsheet_columns))
+
+entries_list = []
+
+for row, entry in enumerate(db_entries):
+
+    # add nan to missing columns
+    for column in gsheet_columns:
+        entry.setdefault(column, np.nan)
+
+    entries_list.append(list(entry.values()))
+
+entries_df = pd.DataFrame(entries_list, columns=gsheet_columns)
+
+# push entries to sheet
+gd.set_with_dataframe(sheet, entries_df)
