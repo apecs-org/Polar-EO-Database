@@ -12,8 +12,6 @@ import numpy as np
 import gspread
 import pandas as pd
 import sys
-
-sys.path.append("/home/adrien/APECS/gspread-dataframe")
 import gspread_dataframe as gd
 
 # setup API account
