@@ -15,7 +15,7 @@ import sys
 import gspread_dataframe as gd
 
 # setup API account
-gc = gspread.service_account("./apecs-remote-sensing-database-e3d1516b4935.json")
+gc = gspread.service_account("./src/apecs-remote-sensing-database-e3d1516b4935.json")
 
 # Open a sheet from a spreadsheet in one go
 sheet = gc.open("APECS Remote Sensing Database - AW tests").sheet1
