@@ -10,9 +10,6 @@ import json
 import sys
 import os
 
-# parse commmand line arguments
-argument_list = str(sys.argv)
-
 # create dict with input credentials and some more variables
 json_credentials = {
     "type": "service_account",
@@ -24,7 +21,7 @@ json_credentials = {
     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
     "token_uri": "https://oauth2.googleapis.com/token",
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": argument_list[5],
+    "client_x509_cert_url": os.environ["CLIENT_X509_CERT_URL"],
 }
 
 print(json_credentials)

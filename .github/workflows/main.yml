@@ -22,7 +22,7 @@ jobs:
         python-version: 3.8	
     - name: Create credentials file
       run: |
-        python ./src/create_json_credentials.py "$env:PROJECT_ID" "$env:PRIVATE_KEY_ID" "$env:PRIVAVTE_KEY" "$env:CLIENT_EMAIL" "$env:CLIENT_ID" "$env:CLIENT_X509_CERT_URL"
+        python ./src/create_json_credentials.py
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
         PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
