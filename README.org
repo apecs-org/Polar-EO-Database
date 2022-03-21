@@ -1,0 +1,5 @@
+[[https://www.repostatus.org/badges/latest/wip.svg][https://www.repostatus.org/badges/latest/concept.svg]]
+[[https://www.gnu.org/licenses/gpl-3.0][https://img.shields.io/badge/License-GPLv3-blue.svg]]
+[[https://github.com/APECS-Earth-Observation/Polar-EO-Database/actions][file:https://github.com/APECS-Earth-Observation/Polar-EO-Database/workflows/CI/badge.svg]]
+[[https://github.com/psf/black][https://img.shields.io/badge/code%20style-black-000000.svg]]
+* Polar-EO-Database
