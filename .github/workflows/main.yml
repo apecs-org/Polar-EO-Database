@@ -20,17 +20,16 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8	
-	
     - name: Create credentials file
       run: |
         python ./src/create_json_credentials.py "$env:PROJECT_ID" "$env:PRIVATE_KEY_ID" "$env:PRIVAVTE_KEY" "$env:CLIENT_EMAIL" "$env:CLIENT_ID" "$env:CLIENT_X509_CERT_URL"
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
-	PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
-	CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
-	PROJECT_ID: ${{ secrets.PROJECT_ID }}
-	CLIENT_X509_CERT_URL: ${{ secrets.CLIENT_X509_CERT_URL }}
-	PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
+        CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
+        PROJECT_ID: ${{ secrets.PROJECT_ID }}
+        CLIENT_X509_CERT_URL: ${{ secrets.CLIENT_X509_CERT_URL }}
+        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
 
     - name: Install dependencies
       run: |
