@@ -27,7 +27,7 @@ json_credentials = {
     "client_x509_cert_url": argument_list[5],
 }
 
-print(os.getcwd())
+print(json_credentials)
 
 # write to JSON file
 with open("./apecs-remote-sensing-database-e3d1516b4935.json", "w") as fp:
