@@ -8,6 +8,7 @@
 
 import json
 import sys
+import os
 
 # parse commmand line arguments
 argument_list = str(sys.argv)
@@ -25,6 +26,8 @@ json_credentials = {
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
     "client_x509_cert_url": argument_list[5],
 }
+
+print(os.getcwd())
 
 # write to JSON file
 with open("./apecs-remote-sensing-database-e3d1516b4935.json", "w") as fp:
