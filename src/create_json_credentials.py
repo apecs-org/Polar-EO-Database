@@ -29,6 +29,7 @@ json_credentials = {
 
 print(json_credentials)
 
+
 # write to JSON file
 with open("./apecs-remote-sensing-database-e3d1516b4935.json", "w") as fp:
     json.dump(json_credentials, fp)
