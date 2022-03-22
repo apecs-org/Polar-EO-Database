@@ -1,0 +1,6 @@
+flake8 
+pytest
+numpy
+pandas 
+gspread
+gspread-dataframe
