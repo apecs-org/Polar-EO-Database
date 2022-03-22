@@ -10,8 +10,6 @@ import json
 import sys
 import gspread
 import os
-
-sys.path.append("/home/adrien/APECS/gspread-dataframe")
 import gspread_dataframe as gd
 
 # set upload path
@@ -30,7 +28,7 @@ db = gd.get_as_dataframe(sheet)
 db_r_filtered = db[db["RS dataset name"].str.contains("Unamed") == False]
 
 # remove unnamed columns
-columns_to_keep = [c for c in db_r_filtered.columns if "unnamed" not in c.lower()]
+columns_to_keep = [c for c in db_r_filtered.columns if not "unnamed" in c.lower()]
 
 db_rc_filtered = db_r_filtered[columns_to_keep]
 
