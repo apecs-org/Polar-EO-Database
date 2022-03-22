@@ -7,7 +7,6 @@
 """
 
 import json
-import sys
 import os
 
 # create dict with input credentials and some more variables
@@ -23,8 +22,6 @@ json_credentials = {
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
     "client_x509_cert_url": os.environ["CLIENT_X509_CERT_URL"],
 }
-
-print(json_credentials)
 
 # write to JSON file
 with open("./apecs-remote-sensing-database-e3d1516b4935.json", "w") as fp:

@@ -7,7 +7,6 @@
 """
 
 import json
-import pandas as pd
 import sys
 import gspread
 import os

@@ -11,7 +11,6 @@ import json
 import numpy as np
 import gspread
 import pandas as pd
-import sys
 import gspread_dataframe as gd
 
 # setup API account
