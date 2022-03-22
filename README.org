@@ -2,6 +2,7 @@
 [[https://www.gnu.org/licenses/gpl-3.0][https://img.shields.io/badge/License-GPLv3-blue.svg]]
 [[https://github.com/APECS-Earth-Observation/Polar-EO-Database/actions][file:https://github.com/APECS-Earth-Observation/Polar-EO-Database/workflows/CI/badge.svg]]
 [[https://github.com/psf/black][https://img.shields.io/badge/code%20style-black-000000.svg]]
+[[https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity][https://img.shields.io/badge/Maintained%3F-yes-green.svg]]
 
 * Polar-EO-Database
 The [[https://www.apecs.is/who-we-are/project-groups.html][APECS Remote sensing project group]] initiated the Polar Remote Sensing
