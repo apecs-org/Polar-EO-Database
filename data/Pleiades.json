@@ -25,4 +25,26 @@
     "Period covered (start)": NaN,
     "Period covered (end)": NaN,
     "Validation": NaN
+}{
+    "RS dataset name": "Pleiades",
+    "Dataset level": "Processed (level 2 or beyond)",
+    "Signal/sensor/ instrument type": "SAR",
+    "Data access platform": "https://nsidc.org/icebridge/portal/map",
+    "Is open data?": "Yes",
+    "Processing software": "=ifna(IF(A101=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A101)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Scientific application": "=ifna(IF(A101=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Application_head;J101:Q101}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Glaciology": false,
+    "Sea Ice": false,
+    "Climate Science": false,
+    "Ecology": false,
+    "Oceanography": false,
+    "Hydrology": true,
+    "Geology": false,
+    "Other fields": false,
+    "Parameters sought": "=ifna(IF(A101=\"\",\"\",TEXTJOIN(\", \",\nTRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A101)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Regions covered": "=ifna(IF(A101=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Regions_head;T101:W101}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "The Arctic": true,
+    "Antarctica": true,
+    "The Himalayas": false,
+    "Other regions": false
 }

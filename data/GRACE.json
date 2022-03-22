@@ -25,4 +25,26 @@
     "Period covered (start)": NaN,
     "Period covered (end)": NaN,
     "Validation": NaN
+}{
+    "RS dataset name": "GRACE",
+    "Dataset level": "Raw (level 1)",
+    "Signal/sensor/ instrument type": "spectrometer",
+    "Data access platform": "https://grace.jpl.nasa.gov/data-analysis-tool/",
+    "Is open data?": "Yes",
+    "Processing software": "=ifna(IF(A58=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A58)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Scientific application": "=ifna(IF(A58=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Application_head;J58:Q58}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Glaciology": false,
+    "Sea Ice": false,
+    "Climate Science": false,
+    "Ecology": false,
+    "Oceanography": true,
+    "Hydrology": true,
+    "Geology": true,
+    "Other fields": false,
+    "Parameters sought": "=ifna(IF(A58=\"\",\"\",TEXTJOIN(\", \",\nTRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A58)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Regions covered": "=ifna(IF(A58=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Regions_head;T58:W58}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "The Arctic": true,
+    "Antarctica": true,
+    "The Himalayas": true,
+    "Other regions": true
 }

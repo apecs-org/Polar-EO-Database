@@ -25,4 +25,26 @@
     "Period covered (start)": NaN,
     "Period covered (end)": NaN,
     "Validation": NaN
+}{
+    "RS dataset name": "ArcticDEM",
+    "Dataset level": "Raw (level 1)",
+    "Signal/sensor/ instrument type": "Optical",
+    "Data access platform": "https://visioterra.net/VtCryoSat/",
+    "Is open data?": "No",
+    "Processing software": "=ifna(IF(A15=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A15)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Scientific application": "=ifna(IF(A15=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Application_head;J15:Q15}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Glaciology": true,
+    "Sea Ice": false,
+    "Climate Science": false,
+    "Ecology": false,
+    "Oceanography": false,
+    "Hydrology": false,
+    "Geology": false,
+    "Other fields": true,
+    "Parameters sought": "=ifna(IF(A15=\"\",\"\",TEXTJOIN(\", \",\nTRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A15)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Regions covered": "=ifna(IF(A15=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Regions_head;T15:W15}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "The Arctic": true,
+    "Antarctica": true,
+    "The Himalayas": true,
+    "Other regions": false
 }

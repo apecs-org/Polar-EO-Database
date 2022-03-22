@@ -25,4 +25,26 @@
     "Period covered (start)": NaN,
     "Period covered (end)": NaN,
     "Validation": NaN
+}{
+    "RS dataset name": "Swarm",
+    "Dataset level": "Raw (level 1)",
+    "Signal/sensor/ instrument type": "passive microwave",
+    "Data access platform": "https://nsidc.org/icebridge/portal/map",
+    "Is open data?": "No",
+    "Processing software": "=ifna(IF(A138=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A138)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Scientific application": "=ifna(IF(A138=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Application_head;J138:Q138}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Glaciology": false,
+    "Sea Ice": true,
+    "Climate Science": false,
+    "Ecology": false,
+    "Oceanography": false,
+    "Hydrology": true,
+    "Geology": false,
+    "Other fields": false,
+    "Parameters sought": "=ifna(IF(A138=\"\",\"\",TEXTJOIN(\", \",\nTRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A138)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Regions covered": "=ifna(IF(A138=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Regions_head;T138:W138}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "The Arctic": true,
+    "Antarctica": false,
+    "The Himalayas": false,
+    "Other regions": false
 }

@@ -25,4 +25,26 @@
     "Period covered (start)": NaN,
     "Period covered (end)": NaN,
     "Validation": NaN
+}{
+    "RS dataset name": "WorldView",
+    "Dataset level": "Raw (level 1)",
+    "Signal/sensor/ instrument type": "SAR",
+    "Data access platform": "https://worldview.earthdata.nasa.gov/",
+    "Is open data?": "No",
+    "Processing software": "=ifna(IF(A147=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A147)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Scientific application": "=ifna(IF(A147=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Application_head;J147:Q147}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Glaciology": true,
+    "Sea Ice": false,
+    "Climate Science": false,
+    "Ecology": false,
+    "Oceanography": false,
+    "Hydrology": false,
+    "Geology": false,
+    "Other fields": false,
+    "Parameters sought": "=ifna(IF(A147=\"\",\"\",TEXTJOIN(\", \",\nTRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A147)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Regions covered": "=ifna(IF(A147=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Regions_head;T147:W147}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "The Arctic": false,
+    "Antarctica": true,
+    "The Himalayas": true,
+    "Other regions": false
 }

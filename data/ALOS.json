@@ -25,4 +25,26 @@
     "Period covered (start)": NaN,
     "Period covered (end)": NaN,
     "Validation": NaN
+}{
+    "RS dataset name": "ALOS",
+    "Dataset level": "Raw (level 1)",
+    "Signal/sensor/ instrument type": "microwave radiometer",
+    "Data access platform": "https://visioterra.net/VtCryoSat/",
+    "Is open data?": "Yes",
+    "Processing software": "=ifna(IF(A5=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A5)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Scientific application": "=ifna(IF(A5=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Application_head;J5:Q5}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Glaciology": false,
+    "Sea Ice": false,
+    "Climate Science": true,
+    "Ecology": true,
+    "Oceanography": false,
+    "Hydrology": false,
+    "Geology": false,
+    "Other fields": false,
+    "Parameters sought": "=ifna(IF(A5=\"\",\"\",TEXTJOIN(\", \",\nTRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A5)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "Regions covered": "=ifna(IF(A5=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Regions_head;T5:W5}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
+    "The Arctic": false,
+    "Antarctica": false,
+    "The Himalayas": false,
+    "Other regions": true
 }
