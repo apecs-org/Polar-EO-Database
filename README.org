@@ -3,6 +3,8 @@
 [[https://github.com/APECS-Earth-Observation/Polar-EO-Database/actions][file:https://github.com/APECS-Earth-Observation/Polar-EO-Database/workflows/CI/badge.svg]]
 [[https://github.com/psf/black][https://img.shields.io/badge/code%20style-black-000000.svg]]
 [[https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity][https://img.shields.io/badge/Maintained%3F-yes-green.svg]]
+[[https://lgtm.com/projects/g/APECS-Earth-Observation/Polar-EO-Database/alerts/][https://img.shields.io/lgtm/alerts/g/APECS-Earth-Observation/Polar-EO-Database.svg?logo=lgtm&logoWidth=18]]
+[[https://lgtm.com/projects/g/APECS-Earth-Observation/Polar-EO-Database/context:python][https://img.shields.io/lgtm/grade/python/g/APECS-Earth-Observation/Polar-EO-Database.svg?logo)]]
 
 * Polar-EO-Database
 The [[https://www.apecs.is/who-we-are/project-groups.html][APECS Remote sensing project group]] initiated the Polar Remote Sensing
