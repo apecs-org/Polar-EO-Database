@@ -24,7 +24,7 @@ sheet = gc.open("APECS Remote Sensing Database - AW tests").sheet1
 db = gd.get_as_dataframe(sheet)
 
 # remove unnamed rows
-db_r_filtered = db[db["RS dataset name"].str.contains("Unamed") == False]
+db_r_filtered = db[db["RS dataset name"].str.contains("Unamed") is False]
 
 # remove unnamed columns
 columns_to_keep = [c for c in db_r_filtered.columns if "unnamed" not in c.lower()]
