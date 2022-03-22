@@ -13,7 +13,6 @@ import os
 
 sys.path.append("/home/adrien/APECS/gspread-dataframe")
 import gspread_dataframe as gd
-from oauth2client.service_account import ServiceAccountCredentials
 
 # set upload path
 output_path = "./data"
