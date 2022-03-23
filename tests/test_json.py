@@ -35,7 +35,10 @@ class TestJSON:
         Verify JSON entries are part of the list of
         possible entries for the database.
         """
-
+        
+        # save JSON objects
+        self.test_json_opening()
+        
         # an example of all possible json entries
         possible_json_entries = [
             "Ecology",
