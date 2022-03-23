@@ -8,6 +8,7 @@
 
 import json
 import glob
+import cmath
 
 # list all database entries
 json_files = glob.glob("./data/*.json")
@@ -19,7 +20,7 @@ for file in json_files:
         data = json.load(f)
 
         # only keep non-nan values
-        data_nonan = {k: v for k, v in data.items() if v == v}
+        data_nonan = {k: v for k, v in data.items() if not cmath.isnan(v)}
 
         # push back modified dict
         json.dump(data_nonan, f, indent=4)
