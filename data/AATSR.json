@@ -1,7 +1,6 @@
 {
     "RS dataset name": "AATSR",
     "Dataset level": "Raw (level 1)",
-    "Sensor name (if level 1)": NaN,
     "Satellite name (if level 1)": "Envisat",
     "Signal/sensor/ instrument type": "scatterometer",
     "Data access platform": "https://visioterra.net/VtCryoSat/",
@@ -21,8 +20,5 @@
     "The Arctic": true,
     "Antarctica": true,
     "The Himalayas": false,
-    "Other regions": false,
-    "Period covered (start)": NaN,
-    "Period covered (end)": NaN,
-    "Validation": NaN
+    "Other regions": false
 }

@@ -6,8 +6,8 @@ name: CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  # Uncomment the 'pull_request' line below to manually trigger the workflow
+  # pull_request:
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8	
+        python-version: 3.8
     - name: Create credentials file
       run: |
         python ./src/create_json_credentials.py
@@ -45,9 +45,8 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest ./tests/test_json.py
+        pytest --verbose ./tests/test_json.py
 
     - name: Create Google sheet from repository
       run: |
         python ./src/create_database_gsheet.py
-    

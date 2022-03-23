@@ -1,8 +1,6 @@
 {
     "RS dataset name": "SMOS",
     "Dataset level": "Raw (level 1)",
-    "Sensor name (if level 1)": NaN,
-    "Satellite name (if level 1)": NaN,
     "Signal/sensor/ instrument type": "SAR",
     "Data access platform": "https://nsidc.org/icebridge/portal/map",
     "Is open data?": "Yes",
@@ -21,8 +19,5 @@
     "The Arctic": true,
     "Antarctica": true,
     "The Himalayas": true,
-    "Other regions": false,
-    "Period covered (start)": NaN,
-    "Period covered (end)": NaN,
-    "Validation": NaN
+    "Other regions": false
 }

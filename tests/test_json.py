@@ -14,3 +14,4 @@ def test_file_opening():
     for file in sat_files:
         with open(file) as json_file:
             data = json.load(json_file)
+            assert isinstance(data, dict)

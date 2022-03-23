@@ -1,8 +1,6 @@
 {
     "RS dataset name": "SSM/IS-f17",
     "Dataset level": "Raw (level 1)",
-    "Sensor name (if level 1)": NaN,
-    "Satellite name (if level 1)": NaN,
     "Signal/sensor/ instrument type": "altimeter",
     "Data access platform": "https://nsidc.org/icebridge/portal/map",
     "Is open data?": "No",
@@ -21,8 +19,5 @@
     "The Arctic": true,
     "Antarctica": false,
     "The Himalayas": false,
-    "Other regions": false,
-    "Period covered (start)": NaN,
-    "Period covered (end)": NaN,
-    "Validation": NaN
+    "Other regions": false
 }

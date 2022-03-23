@@ -1,8 +1,6 @@
 {
     "RS dataset name": "WorldView-4",
     "Dataset level": "Processed (level 2 or beyond)",
-    "Sensor name (if level 1)": NaN,
-    "Satellite name (if level 1)": NaN,
     "Signal/sensor/ instrument type": "SAR",
     "Data access platform": "https://worldview.earthdata.nasa.gov/",
     "Is open data?": "No",
@@ -21,8 +19,5 @@
     "The Arctic": false,
     "Antarctica": true,
     "The Himalayas": true,
-    "Other regions": false,
-    "Period covered (start)": NaN,
-    "Period covered (end)": NaN,
-    "Validation": NaN
+    "Other regions": false
 }

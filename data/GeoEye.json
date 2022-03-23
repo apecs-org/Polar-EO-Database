@@ -1,8 +1,6 @@
 {
     "RS dataset name": "GeoEye",
     "Dataset level": "Raw (level 1)",
-    "Sensor name (if level 1)": NaN,
-    "Satellite name (if level 1)": NaN,
     "Signal/sensor/ instrument type": "Passive Microwave",
     "Data access platform": "https://visioterra.net/VtCryoSat/",
     "Is open data?": "Yes",
@@ -21,8 +19,5 @@
     "The Arctic": true,
     "Antarctica": true,
     "The Himalayas": true,
-    "Other regions": true,
-    "Period covered (start)": NaN,
-    "Period covered (end)": NaN,
-    "Validation": NaN
+    "Other regions": true
 }

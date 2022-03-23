@@ -1,8 +1,6 @@
 {
     "RS dataset name": "GRACE-FO",
     "Dataset level": "Processed (level 2 or beyond)",
-    "Sensor name (if level 1)": NaN,
-    "Satellite name (if level 1)": NaN,
     "Signal/sensor/ instrument type": "SAR",
     "Data access platform": "https://grace.jpl.nasa.gov/data-analysis-tool/",
     "Is open data?": "Yes",
@@ -21,8 +19,5 @@
     "The Arctic": true,
     "Antarctica": true,
     "The Himalayas": true,
-    "Other regions": true,
-    "Period covered (start)": NaN,
-    "Period covered (end)": NaN,
-    "Validation": NaN
+    "Other regions": true
 }
