@@ -4,3 +4,4 @@ numpy
 pandas 
 gspread
 gspread-dataframe
+micropython-cmath
