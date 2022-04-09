@@ -6,8 +6,8 @@ name: CI
 on:
   push:
     branches: [ main ]
-  # Uncomment the 'pull_request' line below to manually trigger the workflow
-  # pull_request:
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
