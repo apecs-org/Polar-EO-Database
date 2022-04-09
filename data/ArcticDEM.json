@@ -7,7 +7,7 @@
     "Processing software": "=ifna(IF(A15=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A15)}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
     "Scientific application": "=ifna(IF(A15=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Application_head;J15:Q15}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
     "Glaciology": true,
-    "Sea Ice": false,
+    "Sea Ice": true,
     "Climate Science": false,
     "Ecology": false,
     "Oceanography": false,
