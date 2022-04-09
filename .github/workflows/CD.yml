@@ -22,7 +22,7 @@ jobs:
       with:
         python-version: 3.8
     - name: Create credentials file
-      run: |CD
+      run: |
         python ./src/create_json_credentials.py
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
