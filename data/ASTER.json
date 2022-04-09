@@ -10,7 +10,7 @@
     "Sea Ice": true,
     "Climate Science": false,
     "Ecology": false,
-    "Oceanography": false,
+    "Oceanography": true,
     "Hydrology": false,
     "Geology": true,
     "Other fields": false,
