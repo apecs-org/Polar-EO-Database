@@ -8,7 +8,7 @@
     "Scientific application": "=ifna(IF(A17=\"\",\"\",TEXTJOIN(\", \",TRUE,QUERY(TRANSPOSE({Application_head;J17:Q17}),\"Select Col1 where Col2=TRUE\"))),\"No data\")",
     "Glaciology": true,
     "Sea Ice": true,
-    "Climate Science": false,
+    "Climate Science": true,
     "Ecology": false,
     "Oceanography": true,
     "Hydrology": false,
