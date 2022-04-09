@@ -20,17 +20,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-    - name: Create credentials file
-      run: |
-        python ./src/create_json_credentials.py
-      env:
-        CLIENT_ID: ${{ secrets.CLIENT_ID }}
-        PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
-        CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
-        PROJECT_ID: ${{ secrets.PROJECT_ID }}
-        CLIENT_X509_CERT_URL: ${{ secrets.CLIENT_X509_CERT_URL }}
-        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-
+        
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -46,7 +36,3 @@ jobs:
     - name: Test with pytest
       run: |
         pytest --verbose ./tests/test_json.py
-
-    - name: Create Google sheet from repository
-      run: |
-        python ./src/create_database_gsheet.py
