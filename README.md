@@ -24,6 +24,16 @@ on how to help out with our project.
 # Contributors ✨
 
  <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
- <!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://weiji14.github.io"><img src="https://avatars.githubusercontent.com/u/23487320?v=4" width="100px;" alt=""/><br /><sub><b>Wei Ji</b></sub></a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
