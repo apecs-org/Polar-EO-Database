@@ -1,5 +1,7 @@
 {
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
   "contributorsPerLine": 7,
   "contributorsSortAlphabetically": false,
@@ -12,6 +14,20 @@
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     }
   },
-  "skipCi": "true",
-  "contributors": []
+  "skipCi": true,
+  "contributors": [
+    {
+      "login": "weiji14",
+      "name": "Wei Ji",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23487320?v=4",
+      "profile": "http://weiji14.github.io",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "projectName": "Polar-EO-Database",
+  "projectOwner": "APECS-Earth-Observation",
+  "repoType": "github",
+  "repoHost": "https://github.com"
 }
