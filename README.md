@@ -16,7 +16,7 @@ Here, it is proposed to build upon this existing structure by considering the
 Google sheet as an intermediary between the database backend, hosted here in the
 form of [JSON](https://www.json.org) files, and the frontend created with Google services.
 
-** Contributing
+## Contributing
 
 See [the contributing guide](CONTRIBUTING.md) for detailed instructions
 on how to help out with our project.
