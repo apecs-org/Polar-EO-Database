@@ -39,6 +39,15 @@
         "content",
         "ideas"
       ]
+    },
+    {
+      "login": "TremendousEnceladus",
+      "name": "TremendousEnceladus",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103304374?v=4",
+      "profile": "https://github.com/TremendousEnceladus",
+      "contributions": [
+        "test"
+      ]
     }
   ],
   "repoType": "github",
