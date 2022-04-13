@@ -29,6 +29,7 @@ on how to help out with our project.
 <table>
   <tr>
     <td align="center"><a href="http://weiji14.github.io"><img src="https://avatars.githubusercontent.com/u/23487320?v=4" width="100px;" alt=""/><br /><sub><b>Wei Ji</b></sub></a></td>
+    <td align="center"><a href="https://github.com/AdrienWehrle"><img src="https://avatars.githubusercontent.com/u/44843368?v=4" width="100px;" alt=""/><br /><sub><b>Adrien Wehrlé </b></sub></a></td>
   </tr>
 </table>
 
