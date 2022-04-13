@@ -16,6 +16,16 @@
   },
   "skipCi": true,
   "contributors": [
+  {
+      "login": "AdrienWehrle",
+      "name": "Adrien Wehrlé ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44843368?v=4",
+      "profile": "https://github.com/AdrienWehrle",
+      "contributions": [
+        "code",
+        "infra"
+      ]
+    },
     {
       "login": "weiji14",
       "name": "Wei Ji",
@@ -24,16 +34,6 @@
       "contributions": [
         "code",
         "doc",
-        "infra"
-      ]
-    },
-    {
-      "login": "AdrienWehrle",
-      "name": "Adrien Wehrlé ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/44843368?v=4",
-      "profile": "https://github.com/AdrienWehrle",
-      "contributions": [
-        "code",
         "infra"
       ]
     }
