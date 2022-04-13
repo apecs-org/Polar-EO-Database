@@ -32,6 +32,7 @@ on how to help out with our project.
     <td align="center"><a href="http://weiji14.github.io"><img src="https://avatars.githubusercontent.com/u/23487320?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wei Ji</b></sub></a><br /><a href="https://github.com/APECS-Earth-Observation/Polar-EO-Database/commits?author=weiji14" title="Code">💻</a> <a href="https://github.com/APECS-Earth-Observation/Polar-EO-Database/commits?author=weiji14" title="Documentation">📖</a> <a href="#infra-weiji14" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/Azamattf"><img src="https://avatars.githubusercontent.com/u/70375131?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Azamattf</b></sub></a><br /><a href="#content-Azamattf" title="Content">🖋</a> <a href="#ideas-Azamattf" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/TremendousEnceladus"><img src="https://avatars.githubusercontent.com/u/103304374?v=4?s=100" width="100px;" alt=""/><br /><sub><b>TremendousEnceladus</b></sub></a><br /><a href="https://github.com/APECS-Earth-Observation/Polar-EO-Database/commits?author=TremendousEnceladus" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://www.williamharcourt.co.uk"><img src="https://avatars.githubusercontent.com/u/48527570?v=4?s=100" width="100px;" alt=""/><br /><sub><b>William Harcourt</b></sub></a><br /><a href="#ideas-wdharcourt1" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
