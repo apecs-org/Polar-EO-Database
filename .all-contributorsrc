@@ -31,6 +31,15 @@
       ]
     },
     {
+      "login": "wdharcourt1",
+      "name": "William Harcourt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48527570?v=4",
+      "profile": "http://www.williamharcourt.co.uk",
+      "contributions": [
+        "ideas"
+      ]
+    }
+    {
       "login": "Azamattf",
       "name": "Azamattf",
       "avatar_url": "https://avatars.githubusercontent.com/u/70375131?v=4",
@@ -47,15 +56,6 @@
       "profile": "https://github.com/TremendousEnceladus",
       "contributions": [
         "test"
-      ]
-    },
-    {
-      "login": "wdharcourt1",
-      "name": "William Harcourt",
-      "avatar_url": "https://avatars.githubusercontent.com/u/48527570?v=4",
-      "profile": "http://www.williamharcourt.co.uk",
-      "contributions": [
-        "ideas"
       ]
     }
   ],
