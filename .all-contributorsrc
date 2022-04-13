@@ -1,6 +1,6 @@
 {
-  "projectName": "all-contributors",
-  "projectOwner": "all-contributors",
+  "projectName": "Polar-EO-Database",
+  "projectOwner": "APECS-Earth-Observation",
   "files": [
     "README.md"
   ],
@@ -29,10 +29,20 @@
         "doc",
         "infra"
       ]
+    },
+    {
+      "login": "Azamattf",
+      "name": "Azamattf",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70375131?v=4",
+      "profile": "https://github.com/Azamattf",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
-  "projectName": "Polar-EO-Database",
-  "projectOwner": "APECS-Earth-Observation",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "contributorsPerLine": 7
 }
