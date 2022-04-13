@@ -24,7 +24,9 @@
       "contributions": [
         "code",
         "infra",
-        "data"
+        "data",
+        "maintenance",
+        "test"
       ]
     },
     {
