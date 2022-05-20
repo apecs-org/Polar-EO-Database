@@ -12,10 +12,12 @@ import os
 import gspread_dataframe as gd
 
 # set upload path
-output_path = "./data"
+output_path = "/home/adrien/APECS/Polar-EO-Database/data"
 
 # setup API account
-gc = gspread.service_account("./apecs-remote-sensing-database-e3d1516b4935.json")
+gc = gspread.service_account(
+    "/home/adrien/APECS/Polar-EO-Database/src/apecs-remote-sensing-database-d25dad990dc4.json"
+)
 
 # Open a sheet from a spreadsheet in one go
 sheet = gc.open("APECS Remote Sensing Database - AW tests").sheet1
@@ -54,5 +56,11 @@ for sat, content in db_dict.items():
             .replace(".", "-")
         )
 
+        with open("df.yml", "w") as file:
+            yaml.dump(
+                {"result": json.loads(content.to_json(orient="records"))},
+                file,
+                default_flow_style=False,
+            )
         with open(f"{output_path}/{rs_dataset_name_formatted}.json", "w") as outfile:
             json.dump(content, outfile, indent=4)
