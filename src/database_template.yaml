@@ -1,0 +1,63 @@
+# This is a template for a new entry in the Polar
+# EO data base of the APECS Earth Observation
+# Organization
+# 
+# Github repository:
+# https://github.com/APECS-Earth-Observation/Polar-EO-Database
+#
+# -----------------------------------------------
+# 
+# Each field is preceded by two line of comments
+# corresponding to:
+# 
+# - a short field description.
+#
+# - a list of Existing Values (EVs) for this field.
+#   Fields allowing new user-defined values (upon
+#   acceptance from the database maintainers) are
+#   marked with an asterisk (EVs*). Fields without
+#   pre-defined values have EVs set to None.
+
+# comment about entry name
+# EVs: None
+Name: temp_name
+
+# comment about sensor type
+# EVs: None
+Signal/sensor/instrument type: altimeter
+
+# comment about data set level
+# EVs: L1 (raw), L2 (processed)
+data set level: L1
+
+# is the data in open access?
+# EVs: True, False
+open access: True
+
+# comment about data access platform
+# EVs: None
+data access platform: https://nsidc.org/data/nsidc-0478
+
+# comment about regions covered
+# EVs*: Arctic, Antarctica, Himalayas, worldwide
+regions covered: worldwide
+
+# softwares known to be used for the data set processing and analysis
+# EVs*: Python, Matlab, R, C, C++, Fortran, Excel (please, no)
+processing software:
+  - Python
+  - Matlab
+  - R
+
+# fields known to be using this data set
+# EVs*: Glaciology, Sea ice, Climate Science, Ecology, Oceanography,
+#       Geology, Hydrology
+scientific application:
+  - Glaciology
+  - Sea ice
+  
+# comment about parameters sought
+# EVs*: Mass, ice velocity, thickness, NDVI
+parameters sought:
+  - ice velocity
+  - mass
