@@ -1,0 +1,32 @@
+Antarctica: 0.0
+Climate Science: 0.0
+Data access platform: https://visioterra.net/VtCryoSat/
+Dataset level: Raw (level 1)
+Ecology: 0.0
+Geology: 0.0
+Glaciology: 0.0
+Hydrology: 0.0
+Is open data?: 'No'
+Oceanography: 1.0
+Other fields: 0.0
+Other regions: 0.0
+Parameters sought: '=ifna(IF(A57="","",TEXTJOIN(", ",
+
+  TRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A57)}),"Select
+  Col1 where Col2=TRUE"))),"No data")'
+Period covered (end): .nan
+Period covered (start): .nan
+Processing software: =ifna(IF(A57="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A57)}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+RS dataset name: GPS
+Regions covered: =ifna(IF(A57="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Regions_head;T57:W57}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Satellite name (if level 1): .nan
+Scientific application: =ifna(IF(A57="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Application_head;J57:Q57}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Sea Ice: 1.0
+Sensor name (if level 1): .nan
+Signal/sensor/ instrument type: Ka-/Ku-band radar
+The Arctic: 1.0
+The Himalayas: 0.0
+Validation: .nan

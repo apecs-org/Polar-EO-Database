@@ -1,0 +1,32 @@
+Antarctica: 0.0
+Climate Science: 0.0
+Data access platform: https://visioterra.net/VtCryoSat/
+Dataset level: Processed (level 2 or beyond)
+Ecology: 1.0
+Geology: 0.0
+Glaciology: 1.0
+Hydrology: 0.0
+Is open data?: 'Yes'
+Oceanography: 0.0
+Other fields: 0.0
+Other regions: 0.0
+Parameters sought: '=ifna(IF(A28="","",TEXTJOIN(", ",
+
+  TRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A28)}),"Select
+  Col1 where Col2=TRUE"))),"No data")'
+Period covered (end): .nan
+Period covered (start): .nan
+Processing software: =ifna(IF(A28="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A28)}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+RS dataset name: CryoSat-2
+Regions covered: =ifna(IF(A28="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Regions_head;T28:W28}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Satellite name (if level 1): .nan
+Scientific application: =ifna(IF(A28="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Application_head;J28:Q28}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Sea Ice: 1.0
+Sensor name (if level 1): .nan
+Signal/sensor/ instrument type: Microwave radiometer
+The Arctic: 1.0
+The Himalayas: 0.0
+Validation: .nan

@@ -1,0 +1,32 @@
+Antarctica: 1.0
+Climate Science: 0.0
+Data access platform: https://nsidc.org/icebridge/portal/map
+Dataset level: Processed (level 2 or beyond)
+Ecology: 1.0
+Geology: 0.0
+Glaciology: 0.0
+Hydrology: 0.0
+Is open data?: 'Yes'
+Oceanography: 0.0
+Other fields: 0.0
+Other regions: 0.0
+Parameters sought: '=ifna(IF(A130="","",TEXTJOIN(", ",
+
+  TRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A130)}),"Select
+  Col1 where Col2=TRUE"))),"No data")'
+Period covered (end): .nan
+Period covered (start): .nan
+Processing software: =ifna(IF(A130="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A130)}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+RS dataset name: SPOT67
+Regions covered: =ifna(IF(A130="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Regions_head;T130:W130}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Satellite name (if level 1): .nan
+Scientific application: =ifna(IF(A130="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Application_head;J130:Q130}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Sea Ice: 0.0
+Sensor name (if level 1): .nan
+Signal/sensor/ instrument type: altimeters
+The Arctic: 1.0
+The Himalayas: 1.0
+Validation: .nan

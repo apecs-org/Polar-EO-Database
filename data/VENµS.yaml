@@ -1,0 +1,32 @@
+Antarctica: 1.0
+Climate Science: 0.0
+Data access platform: https://nsidc.org/icebridge/portal/map
+Dataset level: Raw (level 1)
+Ecology: 0.0
+Geology: 0.0
+Glaciology: 0.0
+Hydrology: 0.0
+Is open data?: 'No'
+Oceanography: 1.0
+Other fields: 0.0
+Other regions: 0.0
+Parameters sought: '=ifna(IF(A144="","",TEXTJOIN(", ",
+
+  TRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A144)}),"Select
+  Col1 where Col2=TRUE"))),"No data")'
+Period covered (end): .nan
+Period covered (start): .nan
+Processing software: =ifna(IF(A144="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A144)}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+RS dataset name: "VEN\xB5S"
+Regions covered: =ifna(IF(A144="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Regions_head;T144:W144}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Satellite name (if level 1): .nan
+Scientific application: =ifna(IF(A144="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Application_head;J144:Q144}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Sea Ice: 0.0
+Sensor name (if level 1): .nan
+Signal/sensor/ instrument type: altimeter
+The Arctic: 0.0
+The Himalayas: 1.0
+Validation: .nan

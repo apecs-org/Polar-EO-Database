@@ -1,0 +1,32 @@
+Antarctica: 1.0
+Climate Science: 0.0
+Data access platform: https://nsidc.org/icebridge/portal/map
+Dataset level: Raw (level 1)
+Ecology: 0.0
+Geology: 1.0
+Glaciology: 1.0
+Hydrology: 0.0
+Is open data?: 'No'
+Oceanography: 0.0
+Other fields: 0.0
+Other regions: 0.0
+Parameters sought: '=ifna(IF(A106="","",TEXTJOIN(", ",
+
+  TRUE,QUERY(TRANSPOSE({Parameters_head;FILTER(Parameters,Parameters!$A$2:$A=A106)}),"Select
+  Col1 where Col2=TRUE"))),"No data")'
+Period covered (end): .nan
+Period covered (start): .nan
+Processing software: =ifna(IF(A106="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Software_head;FILTER(Software,Software!$A$2:$A=A106)}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+RS dataset name: QuikSCAT
+Regions covered: =ifna(IF(A106="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Regions_head;T106:W106}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Satellite name (if level 1): .nan
+Scientific application: =ifna(IF(A106="","",TEXTJOIN(", ",TRUE,QUERY(TRANSPOSE({Application_head;J106:Q106}),"Select
+  Col1 where Col2=TRUE"))),"No data")
+Sea Ice: 0.0
+Sensor name (if level 1): .nan
+Signal/sensor/ instrument type: Magnetometer
+The Arctic: 0.0
+The Himalayas: 1.0
+Validation: .nan

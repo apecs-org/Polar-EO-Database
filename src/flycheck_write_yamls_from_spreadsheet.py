@@ -9,6 +9,7 @@
 import json
 import gspread
 import os
+import yaml
 import gspread_dataframe as gd
 
 # set upload path
@@ -25,8 +26,11 @@ sheet = gc.open("APECS Remote Sensing Database - AW tests").sheet1
 # %% pull database (db) from Google sheets
 db = gd.get_as_dataframe(sheet)
 
+# only select valid entries
+valid_filter = [isinstance(t, str) for t in db["RS dataset name"].values]
+
 # remove unnamed rows
-db_r_filtered = db[db["RS dataset name"].str.contains("Unamed") is False]
+db_r_filtered = db[valid_filter]
 
 # remove unnamed columns
 columns_to_keep = [c for c in db_r_filtered.columns if "unnamed" not in c.lower()]
@@ -56,11 +60,12 @@ for sat, content in db_dict.items():
             .replace(".", "-")
         )
 
-        with open("df.yml", "w") as file:
+        with open(f"{output_path}/{rs_dataset_name_formatted}.yaml", "w") as file:
             yaml.dump(
-                {"result": json.loads(content.to_json(orient="records"))},
+                content,
                 file,
                 default_flow_style=False,
             )
-        with open(f"{output_path}/{rs_dataset_name_formatted}.json", "w") as outfile:
-            json.dump(content, outfile, indent=4)
+
+        # with open(f"{output_path}/{rs_dataset_name_formatted}.json", "w") as outfile:
+        #     json.dump(content, outfile, indent=4)
