@@ -81,9 +81,19 @@ body:
       description: Which of these software tools are known to be used for processing and analyzing this dataset?
       multiple: true
       options:
-        - Python
+        - ArcGIS
+        - ENVI
+        - ERDAS
+        - Fortran
+        - GAMMA
+        - Generic Mapping Tools (GMT)
+        - Google Earth Engine (GEE)
+        - IDL
+        - Julia
         - Matlab
-        - R
+        - Python
+        - R/Rstudio
+        - SNAP
         - Other
     validations:
       required: true
