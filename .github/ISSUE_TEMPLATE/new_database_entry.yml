@@ -1,7 +1,7 @@
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema#about-githubs-form-schema
 name: New Database Entry
 description: Create a new entry for a satellite sensor in the Polar EO database
-title: "[New]: "
+title: "[New]: Sensor-Name"
 labels: ["enhancement", "triage"]
 assignees:
   - octocat
