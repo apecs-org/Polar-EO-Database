@@ -50,6 +50,9 @@ body:
       options:
         - "Yes"
         - "No"
+        - "Unsure"
+    validations:
+      required: true
   - type: input
     id: data-access-platform
     attributes:
@@ -69,6 +72,8 @@ body:
         - Antarctic
         - Himalayas
         - Worldwide
+    validations:
+      required: true
   - type: dropdown
     id: processing-software
     attributes:
@@ -80,6 +85,8 @@ body:
         - Matlab
         - R
         - Other
+    validations:
+      required: true
   - type: dropdown
     id: scientific-application
     attributes:
@@ -95,6 +102,8 @@ body:
         - Oceanography
         - Sea ice
         - Other
+    validations:
+      required: true
   - type: dropdown
     id: parameters-sought
     attributes:
@@ -107,6 +116,8 @@ body:
         - Mass
         - NDVI
         - Other
+    validations:
+      required: true
   - type: textarea
     id: other-information
     attributes:
@@ -116,7 +127,9 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
+    validations:
+      required: true
