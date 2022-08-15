@@ -1,0 +1,19 @@
+name: Parse new databse entry issue
+on:
+  issues:
+    types: opened
+concurrency: 'main'
+jobs:
+  place_order:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: stefanbuck/github-issue-praser@v2
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/new_database_entry.yml
+
+      - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
+
+      - run: cat order.json
