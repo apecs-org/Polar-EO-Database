@@ -48,8 +48,8 @@ body:
       label: Open Access
       description: Is the data open access?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
   - type: input
     id: data-access-platform
     attributes:
@@ -120,4 +120,3 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
-  
