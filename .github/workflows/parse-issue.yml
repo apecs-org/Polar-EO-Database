@@ -3,8 +3,6 @@ name: parse-issue
 on:
   issues:
     types: [opened]
-  repository_dispatch:
-    types: [retry-nuget-release-command]
 
 defaults:
   run:
