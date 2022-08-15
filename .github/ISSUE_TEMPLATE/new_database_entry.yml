@@ -25,10 +25,16 @@ body:
       description: What is the type of the instrument this sensor is using?
       options:
         - Laser altimeter
-        - Optical
+        - Magnetometer
+        - Optical (multispectral)
+        - Optical (hyperspectral)
+        - Passive microwave
         - Radar altimeter
+        - Scatterometer
+        - Spectrometer
         - Synthetic Aperture Radar (SAR)
         - Gravity
+        - GNSS-R
         - Other
     validations:
       required: true
