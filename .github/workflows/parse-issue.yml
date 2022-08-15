@@ -1,15 +1,28 @@
-- name: Run GitHub issue forms parser
-  id: issue-parser
-  uses: edumserrano/github-issue-forms-parser@v1.2
-  with:
-    template-filepath: '.github/ISSUE_TEMPLATE/my-issue-form-template.yml'
-    issue-form-body: '${{ github.event.issue.body }}'
-# The next step is using powershell to parse the action's output but you can use whatever you prefer.
-# Note that in order to read the step outputs the action step must have an id.
-- name: Output parsed issue
-  shell: pwsh
-  run: |
-    $issue = '${{ steps.issue-parser.outputs.parsed-issue }}' | ConvertFrom-Json
-    $issueAsJsonIndented = ConvertTo-Json $issue
-    Write-Output $issueAsJsonIndented # outputs the parsed issue as an indented JSON string
-    ...
+name: parse-issue
+
+on:
+  issues:
+    types: [opened]
+  repository_dispatch:
+    types: [retry-nuget-release-command]
+
+defaults:
+  run:
+    shell: pwsh
+    
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: Checkout repository
+       uses: actions/checkout@v3
+     - uses: edumserrano/github-issue-forms-parser@v1
+       id: issue-parser
+       with:
+        template-filepath: .github/ISSUE_TEMPLATE/nuget-release.yml
+        issue-form-body:  ${{ needs.workflow-args.outputs.issue-body }}
+     - name: Show parsed data JSON
+       run: |
+        Write-Host "${{ steps.issue-parser.outputs.jsonString }}"
