@@ -19,7 +19,7 @@ jobs:
      - uses: edumserrano/github-issue-forms-parser@v1
        id: issue-parser
        with:
-        template-filepath: .github/ISSUE_TEMPLATE/nuget-release.yml
+        template-filepath: .github/ISSUE_TEMPLATE/new_database_entry.yml
         issue-form-body:  ${{ needs.workflow-args.outputs.issue-body }}
      - name: Show parsed data JSON
        run: |
