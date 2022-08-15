@@ -111,9 +111,11 @@ body:
       description: What are the physical parameters that can be derived from this sensor?
       multiple: true
       options:
+        - Albedo
         - Ice thickness
         - Ice velocity
         - Mass
+        - Surface elevation
         - NDVI
         - Other
     validations:
