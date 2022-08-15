@@ -1,0 +1,123 @@
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema#about-githubs-form-schema
+name: New Database Entry
+description: Create a new entry for a satellite sensor in the Polar EO database
+title: "[New]: "
+labels: ["enhancement", "triage"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this form!
+  - type: input
+    id: sensor-name
+    attributes:
+      label: Sensor name
+      description: What is the name of the satellite sensor?
+      placeholder: e.g. Sentinel-2/MSI
+    validations:
+      required: true
+  - type: dropdown
+    id: sensor-type
+    attributes:
+      label: Sensor type
+      description: What is the type of the instrument this sensor is using?
+      options:
+        - Laser altimeter
+        - Optical
+        - Radar altimeter
+        - Synthetic Aperture Radar (SAR)
+        - Gravity
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: dataset-level
+    attributes:
+      label: Dataset level
+      description: What is the processing level of this dataset?
+      options:
+        - L1 (raw)
+        - L2 (processed)
+    validations:
+      required: true
+  - type: dropdown
+    id: open-access
+    attributes:
+      label: Open Access
+      description: Is the data open access?
+      options:
+        - Yes
+        - No
+  - type: input
+    id: data-access-platform
+    attributes:
+      label: Data access platform
+      description: Please provide a URL link to where this data can be accessed.
+      placeholder: e.g. https://nsidc.org/data/nsidc-XXXX
+    validations:
+      required: true
+  - type: dropdown
+    id: regions-covered
+    attributes:
+      label: Regions covered
+      description: Which geographical regions does this dataset cover?
+      multiple: true
+      options:
+        - Arctic
+        - Antarctic
+        - Himalayas
+        - Worldwide
+  - type: dropdown
+    id: processing-software
+    attributes:
+      label: Processing software
+      description: Which of these software tools are known to be used for processing and analyzing this dataset?
+      multiple: true
+      options:
+        - Python
+        - Matlab
+        - R
+        - Other
+  - type: dropdown
+    id: scientific-application
+    attributes:
+      label: Scientific application
+      description: Which scientific fields are using this dataset in their research?
+      multiple: true
+      options:
+        - Climate Science
+        - Ecology
+        - Geology
+        - Glaciology
+        - Hydrology
+        - Oceanography
+        - Sea ice
+        - Other
+  - type: dropdown
+    id: parameters-sought
+    attributes:
+      label: Parameters sought
+      description: What are the physical parameters that can be derived from this sensor?
+      multiple: true
+      options:
+        - Ice thickness
+        - Ice velocity
+        - Mass
+        - NDVI
+        - Other
+  - type: textarea
+    id: other-information
+    attributes:
+      label: Other information
+      description: Please provide any other information you would like to add.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+  
