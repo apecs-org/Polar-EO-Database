@@ -1,7 +1,7 @@
 # https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema#about-githubs-form-schema
 name: New Database Entry
 description: Create a new entry for a satellite sensor in the Polar EO database
-title: "[New]: Sensor-Name"
+title: "[New]: Satellite_SensorName"
 labels: ["enhancement", "triage"]
 assignees:
   - octocat
@@ -14,8 +14,8 @@ body:
     id: sensor-name
     attributes:
       label: Sensor name
-      description: What is the name of the satellite sensor?
-      placeholder: e.g. Sentinel-2/MSI
+      description: What is the full name of the satellite sensor?
+      placeholder: e.g. Moderate Resolution Imaging Spectroradiometer (MODIS)
     validations:
       required: true
   - type: dropdown
@@ -151,3 +151,12 @@ body:
           required: true
     validations:
       required: true
+  - type: input
+    id: wavelength
+    attributes:
+      label: Wavelength
+      description: What is the sensor wavelength (nm)?
+      placeholder: e.g. 400-1200 nm
+    validations:
+      required: true
+      
